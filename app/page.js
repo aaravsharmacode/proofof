@@ -1,18 +1,15 @@
 export default function Home() {
   return (
-    <div style={{
-      height: '100vh',
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'center',
-      alignItems: 'center',
-      backgroundColor: '#0f172a',
-      color: 'white',
-      fontFamily: 'monospace'
-    }}>
-      <h1>🚀 Proof of Build</h1>
-      <p>Day 1 — my first Next.js project live.</p>
-      <p>Learning, building, executing daily.</p>
-    </div>
+    <section className="flex flex-col items-center justify-center h-screen">
+      <h1 className="text-5xl font-bold text-cyan-400 mb-4">
+        🚀 Proof of Build
+      </h1>
+      <p className="text-lg text-gray-300">
+        Built by <span className="font-semibold text-white">Aarav Sharma</span>
+      </p>
+      <button className="mt-6 bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-2 rounded-lg">
+        Get Started
+      </button>
+    </section>
   );
 }

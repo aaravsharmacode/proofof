@@ -1,12 +1,15 @@
 export const metadata = {
-  title: 'Proof of Build',
-  description: 'My first Next.js project',
+  title: "Proof of Build | Web3 Developer Portfolio",
+  description: "Built by Aarav Sharma",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body style={{ margin: 0, padding: 0 }}>{children}</body>
+      <body className="bg-slate-900 text-white min-h-screen">
+        <main className="container mx-auto p-8">{children}</main>
+      </body>
     </html>
   );
 }
+
